@@ -135,7 +135,7 @@ $classic-box-shadow: 0 6px 18px 1px rgba(0,0,0,.12) !default;
 @mixin opacity($decimal) {
     $percent: $decimal * 100;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=${percent})";
-    filter: ~"alpha(opacity=${percent})";
+    filter: alpha(opacity=$percent);
     -moz-opacity: $decimal;
          opacity: $decimal;
 }
